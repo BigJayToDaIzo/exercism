@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "context7": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    },
+    "rust-docs": {
+      "type": "stdio",
+      "command": "/home/jm/.cargo/bin/rust-docs-mcp",
+      "args": []
+    }
+  }
+}
