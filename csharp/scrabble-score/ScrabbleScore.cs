@@ -1,6 +1,7 @@
 public static class ScrabbleScore
 {
   public static int Score(string input)
+
   {
     var scoreBoard = new Dictionary<int, char[]>
     {
@@ -18,8 +19,6 @@ public static class ScrabbleScore
 
   public static int Score(string input, Dictionary<int, char[]> alpha)
   {
-    var flippedAlpha = new Dictionary<int, char[]>();
-    // do dict things
-    return flippedAlpha;
+    
   }
 }
