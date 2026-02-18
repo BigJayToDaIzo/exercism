@@ -12,12 +12,13 @@
 - .NET 9.0, xUnit tests, static classes pattern
 
 ## Environment
-- Editor: Helix + OmniSharp (settled after csharp-ls failed — see below)
+- Editor: Neovim + OmniSharp (pivoted from Helix — too painful for .NET dev)
 - Version manager: asdf (`.tool-versions`)
 - MCP: context7 (needs nodejs), rust-docs
 
 ## LSP History (Blog Context)
-- csharp-ls was first choice but silently broken in Helix — config existed but was never wired in until Dec 2025 (helix #15025)
+- Started with Helix + csharp-ls: silently broken — config existed but was never wired in until Dec 2025 (helix #15025)
 - Even after the fix, csharp-ls sends registerCapability requests Helix doesn't handle, breaking completions/hover/go-to-def
-- OmniSharp works end-to-end despite being heavier and slower to initialize
-- Key issues: helix #15025, #13567, #6131, #2616
+- OmniSharp worked in Helix but was heavy and slow to initialize
+- Ultimately pivoted to Neovim for better .NET tooling support
+- Key Helix issues: helix #15025, #13567, #6131, #2616
