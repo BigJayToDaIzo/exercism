@@ -1,6 +1,6 @@
 # Blog Post: Freshening My C# (After 2 Years of Gleam & Rust)
 
-*Revised outline — incorporating session notes from 2025-02-15. Ready to draft.*
+*POSTED. This blog entry has been published.*
 
 ---
 

@@ -21,3 +21,10 @@
 ## Next Blog Post Notes
 - Neovim dotnet dev setup took ~15 minutes vs an entire afternoon fighting LSP integrations in Helix
 - The contrast is the story: "earned environment" has limits, and knowing when to pivot is its own skill
+
+## LSP History (Blog Context)
+- Started with Helix + csharp-ls: silently broken — config existed but was never wired in until Dec 2025 (helix #15025)
+- Even after the fix, csharp-ls sends registerCapability requests Helix doesn't handle, breaking completions/hover/go-to-def
+- OmniSharp worked in Helix but was heavy and slow to initialize
+- Ultimately pivoted to Neovim for better .NET tooling support
+- Key Helix issues: helix #15025, #13567, #6131, #2616
